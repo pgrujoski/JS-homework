@@ -25,5 +25,5 @@ let question5 = (hasTea && hasMilk) || (hasCoffee && hasTea);
 console.log(question5);
 
 // Does the student have neither coffee nor tea?
-let question6 = !(hasCoffee || hasTea);
+let question6 = !(hasCoffee && hasTea);
 console.log(question6);
