@@ -232,7 +232,7 @@ let zooAnimals = [
 //а. испечатете ги имињата на животните кои имаат популарност поголема од 4
 let popularAnimals = zooAnimals
     .filter(animal => animal.popularity > 4)
-    .map(animal => animal.residents.map(resident => resident.name))
+    .map(animal => animal.name)
 
 console.log(popularAnimals);
 
@@ -242,14 +242,16 @@ let oldestElephant = zooAnimals
     .residents.reduce((oldest, current) => (current.age > oldest.age ? current : oldest));
 
 console.log(oldestElephant.name)
+
 // в. испечатете ги сите имиња на пингвини кои се помали од 10 години и се женки
 let youngFemalePenguins = zooAnimals
     .find(animal => animal.name === "penguins")
-    .residents.filter(penguin => penguin.sex === "female" && penguin.age < 10);
+    .residents.filter(penguin => penguin.sex === "female" && penguin.age < 10)
+    .map(penguin => penguin.name);
 
-let namesOfYoungFemalePenguins = youngFemalePenguins.map(penguin => penguin.name);
+// let namesOfYoungFemalePenguins = youngFemalePenguins.map(penguin => penguin.name);
 
-console.log(namesOfYoungFemalePenguins);
+console.log(youngFemalePenguins);
 
 
 // г. најдете ја групата животни чие име има најмногу букви и потоа испечатете го збирот на возраста на жителите

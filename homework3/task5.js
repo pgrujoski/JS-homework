@@ -13,5 +13,5 @@ function checkGrade(points) {
     return grade;
   }
   
-  const examplePoints = 98;
+  const examplePoints = 61;
   console.log(checkGrade(examplePoints))

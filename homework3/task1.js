@@ -7,7 +7,7 @@ let books = [
 ]
 //a
 books.forEach(function (book) {
-    console.log(book.author);
+    console.log(book.author, book.title);
 });
 
 //b
