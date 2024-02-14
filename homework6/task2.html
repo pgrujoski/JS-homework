@@ -1,0 +1,58 @@
+<!-- Задача 2.
+
+Да се симулира форма за регистрација на корисници. Формата треба да ги содржи следниве инпут полиња:
+
+First name
+Last name
+Email
+Password
+Confirm password
+и секако на крај да има Register копче кое што при клик доколку корисникот ги пополнил сите полиња и доколку password и confirm passwоrd 
+полињата имаат иста вредност, во пребарувачот со помош на alert методот да се испише пораката: “Registration Successful!” 
+заедно со името презимето и самиот e-mail. Доколку вредностите на овие две полиња не се совпаѓаат, да се испише пораката: 
+“Passwords do not match. Please try again.” JavaScript кодот треба да биде напишан во посебен фајл. 
+Дополнително: Формата да се стилизира минимално со CSS чиј што код треба да биде дефиниран во посебен фајл. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+
+<body>
+    <header>
+        <h2>Registration form</h2>
+    </header>
+    <form>
+        <label for="firstName">First name</label>
+        <input type="text" id="firstName" name="firstName">
+        <br>
+
+        <label for="lastName">Last name</label>
+        <input type="text" id="lastName" name="lastName">
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <br>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword">
+        <br>
+
+        <button id="registerButton">Register</button>
+
+
+    </form>
+
+</body>
+<script src="task2.js"></script>
+
+</html>
