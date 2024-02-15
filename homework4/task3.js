@@ -15,18 +15,18 @@ function checkNumber(number) {
 
 //Да се дефинира функција handleSuccess koja што ќе има еден параметар message и ќе го принта во конзола
 
-const handleSuccess = (message) => {console.log(message)}
+const handleSuccess = (message) => { console.log(message) }
 
 // Да се дефинира функција handleError која што ќе има еден параметар error и ќе го принта во конзола
 
-const handleError = (error) => {console.log(error)}
+const handleError = (error) => { console.log(error) }
 
 //Да се повика функцијата checkNumber со неколку различни аргументи и соодветно во .then() и .catch да се повикаат handleSuccess и handleError
 
 checkNumber(8)
-.then(handleSuccess)
-.catch(handleError)
+    .then(handleSuccess)
+    .catch(handleError)
 
 checkNumber(7)
-.then(handleSuccess)
-.catch(handleError)
+    .then(handleSuccess)
+    .catch(handleError)

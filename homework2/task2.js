@@ -6,8 +6,8 @@ for (let i = 0; i <= 10; i++) {
 }
 
 //b
-let start = 3
-let end = 10
+let start = 4
+let end = 9
 let sum = 0
 for (let j = start; j <= end; j++) {
     if (j % 2 === 0) {
