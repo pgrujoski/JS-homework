@@ -1,0 +1,27 @@
+/* styles.css */
+.user-block {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-block h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.user-block p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.user-block hr {
+    margin-top: 15px;
+}
